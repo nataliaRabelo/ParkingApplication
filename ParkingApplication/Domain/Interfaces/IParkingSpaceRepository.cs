@@ -8,6 +8,8 @@ namespace ParkingApplication.Domain.Interfaces
 
         Task<ParkingSpace> GetParkingSpace(int? id);
 
+        Task<ParkingSpace> GetCarParkingSpace(int? id);
+
         Task<ParkingSpace> Create(ParkingSpace parkingSpace);
 
         Task<ParkingSpace> Update(ParkingSpace parkingSpace);

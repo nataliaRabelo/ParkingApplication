@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ParkingApplication.Controllers
+namespace ParkingMVCWeb.Controllers
 {
     [ApiController]
     [Route("[controller]")]

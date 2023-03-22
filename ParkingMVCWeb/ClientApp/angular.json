@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ParkingApplication": {
+    "ParkingMVCWeb": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ParkingApplication:build:production"
+              "browserTarget": "ParkingMVCWeb:build:production"
             },
             "development": {
-              "browserTarget": "ParkingApplication:build:development",
+              "browserTarget": "ParkingMVCWeb:build:development",
               "proxyConfig": "proxy.conf.js"
             }
           },
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ParkingApplication:build"
+            "browserTarget": "ParkingMVCWeb:build"
           }
         },
         "test": {
@@ -129,5 +129,5 @@
       }
     }
   },
-  "defaultProject": "ParkingApplication"
+  "defaultProject": "ParkingMVCWeb"
 }

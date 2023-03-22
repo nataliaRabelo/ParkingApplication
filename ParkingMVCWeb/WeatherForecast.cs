@@ -1,4 +1,4 @@
-namespace ParkingApplication
+namespace ParkingMVCWeb
 {
     public class WeatherForecast
     {

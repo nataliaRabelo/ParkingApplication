@@ -1,7 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using ParkingApplication.Data.Context;
-using ParkingApplication.Data.Repositories;
-using ParkingApplication.Domain.Interfaces;
 using ParkingApplication.Infrastructure.IoC;
 
 var builder = WebApplication.CreateBuilder(args);

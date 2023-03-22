@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ParkingMVC.Application\ParkingMVC.Application.csproj" />
+    <ProjectReference Include="..\ParkingMVC.Domain\ParkingMVC.Domain.csproj" />
+    <ProjectReference Include="..\ParkingMVC.Infra.Data\ParkingMVC.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

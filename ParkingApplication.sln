@@ -5,13 +5,13 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkingMVC.Domain", "ParkingMVC.Domain\ParkingMVC.Domain.csproj", "{CA7624D3-2DF3-4510-9ADF-57AE5763CDE8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkingMVC.Application", "ParkingMVC.Application\ParkingMVC.Application.csproj", "{C766C9BF-4306-4B74-9030-D2C44DAF9E65}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkingMVC.Infra.Data", "ParkingMVC.Infra.Data\ParkingMVC.Infra.Data.csproj", "{65E68600-9A38-4051-873D-DC007B1ADE16}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkingMVC.Infra.IOC", "ParkingMVC.Infra.IOC\ParkingMVC.Infra.IOC.csproj", "{F7FD01C0-CCCD-461A-83A0-AAFA99C4411A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingMVCWeb", "ParkingMVCWeb\ParkingMVCWeb.csproj", "{3FEE19EC-CE3F-4ABB-9D48-830C1DCBC914}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingMVCWeb", "ParkingMVCWeb\ParkingMVCWeb.csproj", "{6325CF25-3D67-47CF-8742-6F7F4E3AF8E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingMVC.Application", "ParkingMVC.Application\ParkingMVC.Application.csproj", "{811DBB14-BF64-4ADD-B8DA-A28C28EA9F73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		{CA7624D3-2DF3-4510-9ADF-57AE5763CDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA7624D3-2DF3-4510-9ADF-57AE5763CDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA7624D3-2DF3-4510-9ADF-57AE5763CDE8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C766C9BF-4306-4B74-9030-D2C44DAF9E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C766C9BF-4306-4B74-9030-D2C44DAF9E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C766C9BF-4306-4B74-9030-D2C44DAF9E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C766C9BF-4306-4B74-9030-D2C44DAF9E65}.Release|Any CPU.Build.0 = Release|Any CPU
 		{65E68600-9A38-4051-873D-DC007B1ADE16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{65E68600-9A38-4051-873D-DC007B1ADE16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65E68600-9A38-4051-873D-DC007B1ADE16}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,10 +31,14 @@ Global
 		{F7FD01C0-CCCD-461A-83A0-AAFA99C4411A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7FD01C0-CCCD-461A-83A0-AAFA99C4411A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7FD01C0-CCCD-461A-83A0-AAFA99C4411A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3FEE19EC-CE3F-4ABB-9D48-830C1DCBC914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FEE19EC-CE3F-4ABB-9D48-830C1DCBC914}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FEE19EC-CE3F-4ABB-9D48-830C1DCBC914}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FEE19EC-CE3F-4ABB-9D48-830C1DCBC914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6325CF25-3D67-47CF-8742-6F7F4E3AF8E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6325CF25-3D67-47CF-8742-6F7F4E3AF8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6325CF25-3D67-47CF-8742-6F7F4E3AF8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6325CF25-3D67-47CF-8742-6F7F4E3AF8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811DBB14-BF64-4ADD-B8DA-A28C28EA9F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811DBB14-BF64-4ADD-B8DA-A28C28EA9F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811DBB14-BF64-4ADD-B8DA-A28C28EA9F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811DBB14-BF64-4ADD-B8DA-A28C28EA9F73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

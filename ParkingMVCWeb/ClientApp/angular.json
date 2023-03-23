@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "ParkingMVCWeb"
+  "defaultProject": "ParkingMVCWeb",
+  "cli": {
+    "analytics": "fbf3bb57-b6e1-49ba-a99b-afaa4fcb2523"
+  }
 }

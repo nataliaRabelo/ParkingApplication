@@ -1,12 +1,16 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ParkingApplication.Data.Context;
 using ParkingApplication.Data.Repositories;
 using ParkingApplication.Domain.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
 
-namespace ParkingApplication.Infrastructure.IoC
+namespace ParkingMVC.Infra.IOC
 {
     public static class DependencyInjection
     {

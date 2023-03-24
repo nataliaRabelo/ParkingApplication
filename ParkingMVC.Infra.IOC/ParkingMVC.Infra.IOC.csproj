@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
@@ -15,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ParkingMVC.Application\ParkingMVC.Application.csproj" />
     <ProjectReference Include="..\ParkingMVC.Domain\ParkingMVC.Domain.csproj" />
     <ProjectReference Include="..\ParkingMVC.Infra.Data\ParkingMVC.Infra.Data.csproj" />
   </ItemGroup>

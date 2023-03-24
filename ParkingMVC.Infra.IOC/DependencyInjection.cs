@@ -4,11 +4,9 @@ using Microsoft.Extensions.DependencyInjection;
 using ParkingApplication.Data.Context;
 using ParkingApplication.Data.Repositories;
 using ParkingApplication.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+using ParkingMVC.Application.Interfaces;
+using ParkingMVC.Application.Mappings;
+using ParkingMVC.Application.Services;
 
 namespace ParkingMVC.Infra.IOC
 {
@@ -22,6 +20,9 @@ namespace ParkingMVC.Infra.IOC
 
             services.AddScoped<ICarRepository, CarRepository>();
             services.AddScoped<IParkingSpaceRepository, ParkingSpaceRepository>();
+            services.AddScoped<ICarService, CarService>();
+            services.AddScoped<IParkingSpaceService, ParkingSpaceService>();
+            services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
             return services;
         }

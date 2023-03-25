@@ -29,7 +29,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="ClientApp\src\app\home\home.component.css.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ParkingMVC.Infra.IOC\ParkingMVC.Infra.IOC.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\assets\NovaPasta\" />
   </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

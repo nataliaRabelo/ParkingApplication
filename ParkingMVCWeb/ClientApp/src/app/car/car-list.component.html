@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+</head>
+<body>
+  <h1>OI</h1>
+
+  <!--<app-car-list></app-car-list>-->
+
+  <button (click)="addCar()">New</button>
+  <form #carForm="ngForm" (submit)="onSubmit(carForm)">
+    <label for="model">Model:</label>
+    <input type="text" id="model" name="model" [(ngModel)]="car.model" required>
+
+    <label for="color">Color:</label>
+    <input type="text" id="color" name="color" [(ngModel)]="car.color" required>
+
+    <label for="plate">Plate Number:</label>
+    <input type="text" id="plate" name="plate" [(ngModel)]="car.plate" required>
+  </form>
+  <button type="submit">Create</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Model</th>
+        <th>Color</th>
+        <th>Plate</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let car of cars">  
+        <td>{{ car.id }}</td>
+        <td>{{ car.model }}</td>
+        <td>{{ car.color }}</td>
+        <td>{{ car.plate }}</td>
+        <td>
+          <button (click)="editCar(car)">Edit</button>
+          <button (click)="removeCar(car)">Remove</button>
+          <button (click)="viewCar(car)">Details</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form *ngIf="selectedCar" (submit)="onSubmit(f)" #f="ngForm">
+    <input type="text" id="model" name="model" [(ngModel)]="selectedCar.model" required>
+    <input type="text" id="color" name="color" [(ngModel)]="selectedCar.color" required>
+    <input type="text" id="plate" name="plate" [(ngModel)]="selectedCar.plate" required>
+    <button type="submit">Save</button>
+  </form>
+
+
+  <div *ngIf="selectedCar">
+    <h2>Edit Car</h2>
+    <form (ngSubmit)="onSubmit(carForm)" #carForm="ngForm">
+      <div>
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" [(ngModel)]="selectedCar.model" required>
+      </div>
+      <div>
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" [(ngModel)]="selectedCar.color" required>
+      </div>
+      <div>
+        <label for="plate">Plate Number:</label>
+        <input type="text" id="plate" name="plate" [(ngModel)]="selectedCar.plate" required>
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+
+</body>
+</html>

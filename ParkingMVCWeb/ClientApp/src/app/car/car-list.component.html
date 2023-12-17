@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title></title>
-</head>
-<body>
-  <h1>OI</h1>
 
-  <!--<app-car-list></app-car-list>-->
-
-  <button (click)="addCar()">New</button>
+<button (click)="addCar(car)">New</button>
   <form #carForm="ngForm" (submit)="onSubmit(carForm)">
     <label for="model">Model:</label>
     <input type="text" id="model" name="model" [(ngModel)]="car.model" required>
@@ -20,8 +10,6 @@
     <label for="plate">Plate Number:</label>
     <input type="text" id="plate" name="plate" [(ngModel)]="car.plate" required>
   </form>
-  <button type="submit">Create</button>
-
   <table>
     <thead>
       <tr>
@@ -74,5 +62,3 @@
     </form>
   </div>
 
-</body>
-</html>

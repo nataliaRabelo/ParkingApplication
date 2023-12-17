@@ -26,6 +26,7 @@ export class CarService {
   }
 
   addCar(car: Car): Observable<Car> {
+    console.log("entrei no servico")
     return this.http.post<Car>(this.baseUrl, car, httpOptions);
   }
 

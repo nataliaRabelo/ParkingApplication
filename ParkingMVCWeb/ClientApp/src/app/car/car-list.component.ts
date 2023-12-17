@@ -32,15 +32,9 @@ export class CarListComponent implements OnInit {
     );
   }
    
-  addCar(): void {
-    const newCar: Car = {
-      id: 0,
-      model: '',
-      color: '',
-      plate: ''
-    };
-
-    this.carService.addCar(newCar).subscribe(
+  addCar(car: Car): void {
+    console.log("entrei em add car.")
+    this.carService.addCar(car).subscribe(
       data => {
         this.cars.push(data);
       },
